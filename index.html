@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="home">
+        <div class="right">
+            <p> <i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</p>
+            <p> <i class="fa-solid fa-phone"></i> +012 345 6789</p>
+            <p> <i class="fa-regular fa-envelope"></i> mail@domain.com</p>
+        </div>
+        <div class="left">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+    </div>
+
+ <div class="background">
+    <header>
+       <div class="waviy">
+        <span style="--i:1"><i class="fa-solid fa-location-dot"></i></span>
+        <span style="--i:2">T</span>
+        <span style="--i:3">O</span>
+        <span style="--i:4">U</span>
+        <span style="--i:5">R</span>
+        <span style="--i:6">I</span>
+        <span style="--i:7">S</span>
+        <span style="--i:8">T</span>
+       </div>
+
+        <div class="navbar">
+                <a class="active" href="#home">home</a>
+                <a href="#about">About</a>
+                <a href="#services">services</a>
+                <a href="#packages">Packages</a>
+                <a href="#pages">Pages</a>
+                <a href="#contact">Contact</a>
+                <a href="#register">Register</a>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+        </div>
+
+        </header>
+
+ </div>
+
+
+
+     <!-- header section end----------------------------------------------------------- -->
+
+</body>
+            <script>
+                let menu = document.querySelector('#menu-bars');
+                let navbar = document.querySelector('.navbar');
+
+                menu.onclick = ()=> {
+                menu.classList.toggle('fa-times');
+                navbar.classList.toggle('active');
+
+            }
+            </script>
+</html>
